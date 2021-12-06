@@ -8,6 +8,7 @@ then
 mkdir server
 fi
 
+
 ## Create the hierarchy for the nodejs server.
 
 cd server
