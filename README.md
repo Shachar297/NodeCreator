@@ -56,3 +56,13 @@
 ## You'll be granted for poll to create a client.
 
 ### you may press 'n' to cancel this stage.
+
+----
+
+
+## Start node server
+
+```sh
+    cd server
+    nodemon
+```
