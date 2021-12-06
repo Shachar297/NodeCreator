@@ -12,7 +12,7 @@ echo "
 
     router.get('/' , async (req, res, next) => {
         try {
-            res.json(${FIRST_MODULE_NAME}Logic.${FIRST_MODULE_NAME}Main());
+            res.json(await ${FIRST_MODULE_NAME}Logic.${FIRST_MODULE_NAME}Main());
         }catch(e) {
             return next(e);
         }
@@ -21,7 +21,7 @@ echo "
     router.get('/:id/' , async (req, res, next) => {
         const userId = req.params.id;
         try {
-            res.json(${FIRST_MODULE_NAME}Logic.${FIRST_MODULE_NAME}Main());
+            res.json(await ${FIRST_MODULE_NAME}Logic.${FIRST_MODULE_NAME}Main());
         }catch(e) {
             return next(e);
         }
@@ -31,7 +31,7 @@ echo "
     router.post('/' , async (req, res, next) => {
         const body = req.body;
         try {
-            res.json(${FIRST_MODULE_NAME}Logic.${FIRST_MODULE_NAME}Main(body = {}));
+            res.json(await ${FIRST_MODULE_NAME}Logic.${FIRST_MODULE_NAME}Main(body = {}));
         }catch(e) {
             return next(e);
         }

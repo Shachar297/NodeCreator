@@ -36,7 +36,7 @@
 ```js
         router.get('/' , async (req, res, next) => {
         try {
-            res.json(appLogic.appMain());
+            res.json(await appLogic.appMain());
         }catch(e) {
             return next(e);
         }
@@ -45,7 +45,7 @@
     router.get('/:id/' , async (req, res, next) => {
         const userId = req.params.id;
         try {
-            res.json(appLogic.appMain());
+            res.json(await appLogic.appMain());
         }catch(e) {
             return next(e);
         }
