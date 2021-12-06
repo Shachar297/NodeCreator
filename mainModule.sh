@@ -6,7 +6,8 @@ cd server
 if [[ ! -f app.js ]];
 then
 
-
+# Create the app.js server script.
+# This module using express as base.
 
 echo "
 const 
@@ -34,6 +35,11 @@ fi
 
 cd ..
 
+# Giving sudo permissions to subModules.sh
+
+
 chmod +x subModules.sh
+
+# Calling subModules.sh to build the logic and dao layers script
 
 ./subModules.sh
