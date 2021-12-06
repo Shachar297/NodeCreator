@@ -17,7 +17,7 @@
 
 ### Shell script will remove the package.json and will write a new one, for nodemon only.
 
-```json
+```js
 // Only this will be added to the package.json, for convenience purposes.
   "scripts" : {
     "start" : "node app.js",
