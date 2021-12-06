@@ -1,5 +1,4 @@
-pwd
-echo "frontend"
+
 mkdir client
 cd client
 touch index.html
