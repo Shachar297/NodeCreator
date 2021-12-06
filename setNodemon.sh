@@ -1,5 +1,7 @@
 cd server
 
+# Re-build the package.json, scripts for nodemon added
+
 rm package.json
 
 echo '
