@@ -88,4 +88,4 @@ cd server
 
 # Start app.js => nodemon
 # Ctrl + C to exit
-nodemon
+#nodemon

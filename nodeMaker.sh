@@ -32,3 +32,14 @@ chmod +x ./mainModule.sh
 
 ./mainModule.sh
 
+chmod +x ./createFrontend.sh
+
+while true; do
+read -p "Create Frontend ? " yn
+
+case $yn in
+[Yy]* ) ./createFrontend.sh; exit;;
+[Nn]* ) echo $yn; exit;;
+* ) echo "please answer yes on no";;
+esac
+done
