@@ -31,6 +31,9 @@ chmod +x ./mainModule.sh
 
 # Calling the MainModles shell script to build the app.js
 
+chmod +x createConf.sh
+./createConf.sh
+
 ./mainModule.sh
 
 chmod +x ./createFrontend.sh
