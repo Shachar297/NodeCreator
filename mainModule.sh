@@ -26,7 +26,7 @@ server.use(cors({ origin : '*'}));
 
 server.use(express.json());
 
-server.use(/'${FIRST_MODULE_NAME}', ${FIRST_MODULE_NAME}Controller);
+server.use('/${FIRST_MODULE_NAME}', ${FIRST_MODULE_NAME}Controller);
 
 server.listen(port, () => console.log('Server is running at port ' + port));
 " >> app.js
