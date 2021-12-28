@@ -30,6 +30,9 @@ ng g c components/footer -m modules/app
 ng g s services/Users 
 ng g s services/state 
 
+cd ..
+cd ..
+cd ..
 
 chmod +x ./fixAngular.sh
 

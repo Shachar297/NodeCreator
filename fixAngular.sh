@@ -1,9 +1,9 @@
+
 cd client/src/
 
 rm main.ts
 
-echo
-"
+echo "
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
@@ -23,8 +23,7 @@ echo "main.ts Was fixed."
 rm index.html
 
 
-echo 
-"
+echo "
 <!doctype html>
 <html lang='en'>
 <head>
@@ -45,8 +44,7 @@ echo "index.html Was fixed."
 
 rm styles.css
 
-echo 
-"
+echo "
 html, body{
     height: 100%;
     margin: 0;
@@ -61,8 +59,7 @@ cd app/modules
 
 rm app.module.ts
 
-echo 
-"
+echo "
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -95,8 +92,7 @@ cd ../components/layout
 
 rm layout.component.css
 
-echo
-"
+echo "
 .layout {
     margin: 0;
     padding: 0;
