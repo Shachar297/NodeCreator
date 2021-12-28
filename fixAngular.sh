@@ -34,7 +34,7 @@ echo "
   <link rel='icon' type='image/x-icon' href='favicon.ico'>
 </head>
 <body>
-  <app-root></app-root>
+  <app-layout></app-layout>
 </body>
 </html>
 
