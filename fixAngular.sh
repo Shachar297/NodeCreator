@@ -134,3 +134,33 @@ echo "
     grid-column: span 2;
   }
 " >> layout.component.css
+
+rm layout.component.html
+
+echo "
+<section class='layout'>
+    <header>
+        <app-header>
+
+        </app-header>
+    </header>
+
+    <aside>
+        <app-menu>
+
+        </app-menu>
+    </aside>
+
+    <main>
+        <app-login>
+
+        </app-login>
+    </main>
+
+    <footer>
+        <app-footer>
+            
+        </app-footer>
+    </footer>
+</section>
+" >> layout.component.html
