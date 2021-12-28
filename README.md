@@ -66,7 +66,7 @@ router.get("/:id/", async (req, res, next) => {
 
 ##### The installation of angular will create a layout and layout boxing (header, aside and footer). With pre defined CSS for layout and styles.css.
 
-<img src="images/Untitled 3.png" width="100%" height="500">
+<img src="images/Untitled 3.png" width="400" height="450">
 
 ```html
 <!-- Old -->
