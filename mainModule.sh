@@ -38,7 +38,7 @@ cd ..
 # Giving sudo permissions to subModules.sh
 
 
-chmod +x subModules.sh
+
 
 # Calling subModules.sh to build the logic and dao layers script
 

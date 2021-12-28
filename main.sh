@@ -1,7 +1,13 @@
 set -x
 
-chmod +x ./nodeMaker.sh
+export main="~/Desktop"
 
+chmod +x ./nodeMaker.sh
+chmod +x ./subModules.sh
+chmod +x ./setNodemon.sh
+chmod +x ./mainModule.sh
+chmod +x ./createConf.sh
+chmod +x ./createFrontend.sh
 
 
 while true; do

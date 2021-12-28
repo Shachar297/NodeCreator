@@ -77,7 +77,6 @@ cd ..
 
 # Giving sudo permissions to setNodemon.sh
 
-chmod +x ./setNodemon.sh
 
 # Calling setNodemon.sh to build the package.json again 
 # It's only necessary for nodemon
