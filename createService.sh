@@ -1,15 +1,14 @@
+source ./declareVars.sh
 cd server
-
 cd controllers
 
-FIRST_MODULE_NAME="confluence"
 echo "
     const express = require('express'),
-    ${FIRST_MODULE_NAME}Logic = require('../logic/${FIRST_MODULE_NAME}-logic'),
+    ${MODULE_NAME}Logic = require('../logic/${MODULE_NAME}-logic'),
     router = express.Router()
     router.get('/' , async (req, res, next) => {
         try {
-            res.json(await ${FIRST_MODULE_NAME}Logic.${FIRST_MODULE_NAME}Main());
+            res.json(await ${MODULE_NAME}Logic.${MODULE_NAME}Main());
         }catch(e) {
             return next(e);
         }
@@ -17,7 +16,7 @@ echo "
     router.get('/:id/' , async (req, res, next) => {
         const userId = req.params.id;
         try {
-            res.json(await ${FIRST_MODULE_NAME}Logic.${FIRST_MODULE_NAME}Main());
+            res.json(await ${MODULE_NAME}Logic.${MODULE_NAME}Main());
         }catch(e) {
             return next(e);
         }
@@ -26,35 +25,35 @@ echo "
     router.post('/' , async (req, res, next) => {
         const body = req.body;
         try {
-            res.json(await ${FIRST_MODULE_NAME}Logic.${FIRST_MODULE_NAME}Main(body = {}));
+            res.json(await ${MODULE_NAME}Logic.${MODULE_NAME}Main(body = {}));
         }catch(e) {
             return next(e);
         }
     })
     module.exports = router;
-" >> ${FIRST_MODULE_NAME}-controller.js
+" >> ${MODULE_NAME}-controller.js
 cd ../logic
 
 echo "
-const ${FIRST_MODULE_NAME}Dao = require('../dao/${FIRST_MODULE_NAME}-dao');
-async function ${FIRST_MODULE_NAME}Main() {
-    const example = await ${FIRST_MODULE_NAME}Dao.${FIRST_MODULE_NAME}Main();
+const ${MODULE_NAME}Dao = require('../dao/${MODULE_NAME}-dao');
+async function ${MODULE_NAME}Main() {
+    const example = await ${MODULE_NAME}Dao.${MODULE_NAME}Main();
     return example
 }
 module.exports = {
-    ${FIRST_MODULE_NAME}Main
+    ${MODULE_NAME}Main
 }
-" >> ${FIRST_MODULE_NAME}-logic.js
+" >> ${MODULE_NAME}-logic.js
 
 cd ../dao
 
 # Building app-dao.js
 
 echo "
-    async function ${FIRST_MODULE_NAME}Main() {
+    async function ${MODULE_NAME}Main() {
         return 'completed'
     }
     module.exports = {
-        ${FIRST_MODULE_NAME}Main
+        ${MODULE_NAME}Main
     }
-" >> ${FIRST_MODULE_NAME}-dao.js
+" >> ${MODULE_NAME}-dao.js

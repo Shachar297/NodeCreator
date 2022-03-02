@@ -1,7 +1,6 @@
 set -x
+source ./declareVars.sh
 
-FIRST_MODULE_NAME="app"
-SERVER_PORT="3443"
 
 if [[ ! -d ./server ]];
 then

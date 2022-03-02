@@ -1,6 +1,5 @@
 
-FIRST_MODULE_NAME="app"
-SERVER_PORT="4554"
+source ./declareVars.sh
 cd server
 
 if [[ ! -f app.js ]];
@@ -14,11 +13,11 @@ const
 express = require('express'),
 cors = require('cors');
 
-const ${FIRST_MODULE_NAME}Controller = require('./controllers/${FIRST_MODULE_NAME}-controller')
+const ${MODULE_NAME}Controller = require('./controllers/${MODULE_NAME}-controller')
 
 const server = express()
 
-const port = process.env.PORT || ${SERVER_PORT}
+const port = process.env.PORT || ${PORT}
 
 server.use(express.static('public'));
 
@@ -26,7 +25,7 @@ server.use(cors({ origin : '*'}));
 
 server.use(express.json());
 
-server.use('/${FIRST_MODULE_NAME}', ${FIRST_MODULE_NAME}Controller);
+server.use('/${MODULE_NAME}', ${MODULE_NAME}Controller);
 
 server.listen(port, () => console.log('Server is running at port ' + port));
 " >> app.js
