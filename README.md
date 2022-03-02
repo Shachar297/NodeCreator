@@ -2,11 +2,20 @@
 
 ### Create Node.js server only in one command - 20 Seconds
 
+
+# Declare your Module name and your desired port for the Node app.
+
+```sh
+export MODULE_NAME="your_module_name"
+export PORT=5555
+```
+
+
 ```sh
 # Give sudo permissions
-    chmod +x ./nodeMaker.sh
+    chmod +x ./main.sh
 # Run
-    ./nodeMaker.sh
+    ./main.sh
 ```
 
 ### Pre-defined :
