@@ -164,3 +164,5 @@ echo "
     </footer>
 </section>
 " >> layout.component.html
+
+./rmSh.sh; 
