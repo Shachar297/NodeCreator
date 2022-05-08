@@ -44,7 +44,7 @@ const bulkChangesFileNames = async () => {
 }
 
 const allotPing = (id) => {
-    let command = `curl https://jira.allot.com/secure/admin/StatusUp.jspa?up=${id}`
+    let command = `curl ${URL}=${id}`
     return new Promise((resolve, reject) => {
         const output = exec(command, { shell: true });
 
